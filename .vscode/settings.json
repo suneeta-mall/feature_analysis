@@ -19,7 +19,7 @@
         "--use-parentheses",
         "--line-width=120 ",
         "--section-default=THIRDPARTY",
-        "--project=apollo",
+        "--project=feature_analysis",
         "--force-sort-within-sections"
     ]
 }

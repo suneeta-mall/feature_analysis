@@ -1,6 +1,6 @@
 version: "3.3"
 services:
-    apollo_devcontainer:
+    fa_devcontainer:
         image: fa_devcontainer
         build:
             context: ../.
