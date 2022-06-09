@@ -1,0 +1,25 @@
+{
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "editor.formatOnSave": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--rcfile=./.pylintrc",
+        "--jobs=4"
+    ],
+    "python.formatting.provider": "black",
+    "python.sortImports.args": [
+        "--multi-line=3",
+        "--trailing-comma",
+        "--force-grid-wrap=0",
+        "--use-parentheses",
+        "--line-width=120 ",
+        "--section-default=THIRDPARTY",
+        "--project=apollo",
+        "--force-sort-within-sections"
+    ]
+}

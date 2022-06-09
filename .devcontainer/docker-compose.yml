@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+    apollo_devcontainer:
+        image: fa_devcontainer
+        build:
+            context: ../.
+            dockerfile: Dockerfile
+            args:
+                version: 1
+        entrypoint: [ "poetry", "run", "start_trainer" ]
+        volumes:
+            - ../.:/app
+networks:
+    default:
+        name: fa-docker-compose-devcontainer

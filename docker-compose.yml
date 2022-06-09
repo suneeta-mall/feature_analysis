@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+    feature_analysis:
+        image: feature_analysis
+        build:
+            context: .
+            dockerfile: Dockerfile
+        entrypoint: [ "poetry", "run", "start_trainer" ]
+        ports:
+            - 5000:5000
+        volumes:
+            - .:/app
